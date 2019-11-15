@@ -3,14 +3,64 @@ import cv2
 import os
 import math
 import numpy as np
-from tifffile import TiffFile
+# from tifffile import TiffFile
 import matplotlib.pyplot as plt
+from scipy import optimize
 
 
-def feature_ana(tiff_path, save_path):
+def fmax(x, a, b, c, duration):
+    return a*np.sin(x*np.pi/duration+b)+c
+
+
+def f_3(x, A, B, C, D):
+    return A*x*x*x + B*x*x + C*x + D
+
+
+def f_4(x, A, B, C, D, E):
+    return A*x*x*x*x + B*x*x*x + C*x*x + D*x + E;
+
+
+def feature_ana(tiff_path, save_path, delta = 1):
     plt.figure(figsize=(20,14))
     # tif = TiffFile(tiff_path)
-    image_arr = cv2.imread(tiff_path, 0) # tif.asarray()
+    image = cv2.imread(tiff_path, 0)[200:, :]
+    image = cv2.medianBlur(image, 7)
+    image_arr = image[:, :30]
+    print('shape:{}'.format(image_arr.shape))
+    row, column = math.ceil(image_arr.shape[0]/delta), image_arr.shape[1]
+    image_arr = image_arr.astype("float")
+
+    gradient = np.zeros((row, column))
+
+    x = np.arange(0, image_arr[:, 0].shape[0], 1)
+    popt, pcov = optimize.curve_fit(f_4, x, image_arr[:, 0], [1, 1, 1, 1, 1])
+    y_fit = f_4(x, popt[0], popt[1], popt[2], popt[3], popt[4])
+
+    for x in range(delta, row, delta):
+        gx = abs(y_fit[x - delta] - y_fit[x]) / delta
+        gradient[x, 0] = gx  # + gy
+        # for y in range(1):
+        #     gx = abs(moon_f[x - delta, y] - moon_f[x, y]) / delta
+        #     # gy = abs(moon_f[x, y + 1] - moon_f[x, y])
+        #     gradient[x, y] = gx # + gy
+
+    plt.subplot('311')
+    plt.plot(gradient[:, 0])
+    plt.subplot('312')
+    plt.plot(y_fit)
+    plt.subplot('313')
+    plt.imshow(image, cmap='gray')
+    plt.show()
+    # sharp = moon_f + gradient
+    # sharp = np.where(sharp < 0, 0, np.where(sharp > 255, 255, sharp))
+    #
+    # gradient = gradient.astype("uint8")
+    # sharp = sharp.astype("uint8")
+    # cv2.imshow("moon", image_arr)
+    # cv2.imshow("gradient", gradient)
+    # cv2.imshow("sharp", sharp)
+    # cv2.waitKey()
+    return
     rows = 4
     cols = math.ceil((image_arr.shape[0] + 1)*1.0/rows)
     print("rows:{}-cols:{}-frame{}".format(rows, cols, image_arr.shape[0]))
@@ -49,7 +99,7 @@ def feature_ana(tiff_path, save_path):
 
 if __name__ == "__main__":
     save_dir = "./images/"
-    travel_dirs = ['normal', 'hsil', 'cancer']
+    travel_dirs = ['cancer', 'normal', 'hsil']
     prefix = ['normal', 'HSIL', 'cancer']
     for idx, td in enumerate(travel_dirs):
         inner_dir = os.path.join(save_dir, travel_dirs[idx])
@@ -59,3 +109,4 @@ if __name__ == "__main__":
             save_name = prefix[idx] + "-" + tp[:-5] + '.png'
             feature_ana(os.path.join(inner_dir, tp), os.path.join(save_dir, save_name))
             break
+        break
