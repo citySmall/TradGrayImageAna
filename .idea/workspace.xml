@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/main_tradFeatureAna.py" line="45" />
+    <bookmark url="file://$PROJECT_DIR$/main_tradFeatureAna.py" line="82" />
+    <bookmark url="file://$PROJECT_DIR$/main_tradFeatureAna.py" line="29" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5df17417-51d7-4a59-9919-5a122e31a901" name="Default Changelist" comment="">
@@ -19,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main_tradFeatureAna.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1563">
-              <caret line="115" column="5" selection-start-line="115" selection-start-column="5" selection-end-line="124" selection-end-column="17" />
+            <state relative-caret-position="303">
+              <caret line="43" column="57" lean-forward="true" selection-start-line="43" selection-start-column="57" selection-end-line="43" selection-end-column="57" />
               <folding>
                 <element signature="e#24#34#0" expanded="true" />
               </folding>
@@ -50,10 +51,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="691" />
-    <option name="y" value="142" />
-    <option name="width" value="1906" />
-    <option name="height" value="1052" />
+    <option name="x" value="120" />
+    <option name="width" value="1637" />
+    <option name="height" value="924" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -83,17 +83,18 @@
               <item name="TradGrayImageAna" type="b2602c69:ProjectViewProjectNode" />
               <item name="TradGrayImageAna" type="462c0819:PsiDirectoryNode" />
               <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="hsil" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TradGrayImageAna" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TradGrayImageAna" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
               <item name="normal" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TradGrayImageAna" type="b2602c69:ProjectViewProjectNode" />
               <item name="TradGrayImageAna" type="462c0819:PsiDirectoryNode" />
               <item name="results" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TradGrayImageAna" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TradGrayImageAna" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -106,6 +107,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images/normal" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -172,19 +178,19 @@
   <component name="ToolWindowManager">
     <frame x="-1" y="-1" width="1922" height="1082" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22509225" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22509225" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32944915" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32944915" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49920928" weight="0.32944915" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.41207626" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32944915" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32944915" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32944915" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007907" side_tool="true" visible="true" weight="0.32944915" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32944915" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -216,37 +222,44 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main_tradFeatureAna.py</url>
-          <line>34</line>
-          <option name="timeStamp" value="7" />
+          <line>89</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main_tradFeatureAna.py</url>
-          <line>52</line>
-          <option name="timeStamp" value="8" />
+          <line>61</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test.md" />
-    <entry file="file://$PROJECT_DIR$/results/cancer-avg-0-9.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/results/cancer-avg-0-9.png" />
     <entry file="file://$PROJECT_DIR$/images/cancer/B1906691-14_circle_5.0x5.0_C01_S0013_0.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/normal/B1902166-12_circle_5.0x5.0_C01_S0001_0.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/cancer3-avg-1870-1880.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/results/cancer3-avg-1870-1880.png" />
     <entry file="file://$PROJECT_DIR$/results/cancer3-avg-2100-2110.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -256,9 +269,6 @@
           <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/cancer1-avg-0-10.png">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/results/cancer1-avg-970-980.png">
       <provider selected="true" editor-type-id="images" />
@@ -278,10 +288,29 @@
     <entry file="file://$PROJECT_DIR$/results/cancer2-avg-2100-2110.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/results/cancer1-avg-0-10.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/normal3-avg-0-10.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Figure_2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/site-packages/numpy/core/fromnumeric.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-218">
+          <caret line="3153" column="64" selection-start-line="3153" selection-start-column="64" selection-end-line="3153" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/normal/B1902166-12_circle_5.0x5.0_C01_S0001_0.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/main_tradFeatureAna.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1563">
-          <caret line="115" column="5" selection-start-line="115" selection-start-column="5" selection-end-line="124" selection-end-column="17" />
+        <state relative-caret-position="303">
+          <caret line="43" column="57" lean-forward="true" selection-start-line="43" selection-start-column="57" selection-end-line="43" selection-end-column="57" />
           <folding>
             <element signature="e#24#34#0" expanded="true" />
           </folding>
