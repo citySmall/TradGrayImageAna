@@ -1,13 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/main_tradFeatureAna.py" line="82" />
+    <bookmark url="file://$PROJECT_DIR$/main_tradFeatureAna.py" line="92" />
     <bookmark url="file://$PROJECT_DIR$/main_tradFeatureAna.py" line="29" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5df17417-51d7-4a59-9919-5a122e31a901" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_tradFeatureAna.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_tradFeatureAna.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/cancer1-avg-0-10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/cancer1-avg-1610-1620.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/cancer1-avg-970-980.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/cancer2-avg-1600-1610.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/cancer2-avg-2100-2110.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/cancer2-avg-970-980.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/cancer3-avg-0-10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/cancer3-avg-2100-2110.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/cancer4-avg-0-10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/cancer4-avg-1250-1260.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/cancer4-avg-2610-2620.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/hsil1-avg-1740-1750.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/hsil1-avg-750-760.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/hsil2-avg-1740-1750.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/hsil2-avg-2210-2220.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/normal1-avg-2610-2620.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/normal1-avg-750-760.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/normal2-avg-0-10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/normal2-avg-750-760.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/normal3-avg-0-10.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,13 +40,33 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main_tradFeatureAna.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="43" column="57" lean-forward="true" selection-start-line="43" selection-start-column="57" selection-end-line="43" selection-end-column="57" />
+            <state relative-caret-position="395">
+              <caret line="49" column="35" lean-forward="true" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
               <folding>
                 <element signature="e#24#34#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/results/cancer1-avg-0-10.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/results/hsil1-avg-0-10.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/results/hsil2-avg-0-10.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/results/normal1-avg-0-10.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -77,19 +117,7 @@
               <item name="TradGrayImageAna" type="b2602c69:ProjectViewProjectNode" />
               <item name="TradGrayImageAna" type="462c0819:PsiDirectoryNode" />
               <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="cancer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TradGrayImageAna" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TradGrayImageAna" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
               <item name="hsil" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TradGrayImageAna" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TradGrayImageAna" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="normal" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TradGrayImageAna" type="b2602c69:ProjectViewProjectNode" />
@@ -106,7 +134,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -178,19 +206,19 @@
   <component name="ToolWindowManager">
     <frame x="-1" y="-1" width="1922" height="1082" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22509225" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22485518" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32944915" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49920928" weight="0.32944915" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.41207626" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49921012" weight="0.32876712" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49710375" weight="0.32876712" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49921012" weight="0.41201264" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32944915" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32944915" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32944915" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007907" side_tool="true" visible="true" weight="0.32944915" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49973643" weight="0.32944915" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49973643" weight="0.32944915" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49973643" weight="0.32944915" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50289625" side_tool="true" visible="true" weight="0.32876712" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32944915" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -242,13 +270,18 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main_tradFeatureAna.py</url>
-          <line>89</line>
+          <line>99</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main_tradFeatureAna.py</url>
-          <line>61</line>
+          <line>67</line>
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main_tradFeatureAna.py</url>
+          <line>30</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -288,9 +321,6 @@
     <entry file="file://$PROJECT_DIR$/results/cancer2-avg-2100-2110.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/results/cancer1-avg-0-10.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/results/normal3-avg-0-10.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -307,10 +337,28 @@
     <entry file="file://$PROJECT_DIR$/images/normal/B1902166-12_circle_5.0x5.0_C01_S0001_0.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/images/hsil/3_P0000776_circle_5.0x5.0_C04_S004.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/hsil/6_P0000776_circle_5.0x5.0_C01_S001.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/hsil1-avg-0-10.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/hsil2-avg-0-10.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/normal1-avg-0-10.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/cancer1-avg-0-10.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/main_tradFeatureAna.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="43" column="57" lean-forward="true" selection-start-line="43" selection-start-column="57" selection-end-line="43" selection-end-column="57" />
+        <state relative-caret-position="395">
+          <caret line="49" column="35" lean-forward="true" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
           <folding>
             <element signature="e#24#34#0" expanded="true" />
           </folding>

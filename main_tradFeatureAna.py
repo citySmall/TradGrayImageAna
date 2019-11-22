@@ -25,46 +25,56 @@ def df_4 (x, A, B, C, D, E):
 
 
 def feature_ana(tiff_path, save_path, delta = 1, fs = 21):
-    # plt.figure(figsize=(5,5))
+    plt.figure(figsize=(5,8))
     # tif = TiffFile(tiff_path)
-    image = cv2.imread(tiff_path, 0)[:, :]
+    image = cv2.imread(tiff_path, 0)[225:, :]
     mean, std = np.mean(image), np.std(image)
-    image = cv2.blur(image, (9, 9))
+    image = cv2.blur(image, (19, 19))
     image_arr = np.transpose(np.asarray([np.mean(image[:, m:m+10], axis=1) for m in range(0, image.shape[-1], 10)]))
     print('shape:{}'.format(image_arr.shape))
 
+    avg_gap = 80
     gap_grads = []
+    hh = []
+    ll = []
     for i in range(image_arr.shape[-1]):
         high_idx = -1
         low_idx = -1
         max_in = np.max(image_arr[:, i])
-        for j in range(image_arr.shape[0]-20):
-            if np.mean(image_arr[j:j+5, i]) > 0.9 * max_in and high_idx == -1:
+        for j in range(image_arr.shape[0]-avg_gap):
+            if np.mean(image_arr[j:j+avg_gap, i]) > 0.65 * max_in and high_idx == -1:
                 high_idx = j
-                for k in range(j, image_arr.shape[0]-20):
-                    if np.mean(image_arr[k:k + 20, i]) < 0.2 * max_in and low_idx == -1:
+                for k in range(j, image_arr.shape[0]-avg_gap):
+                    if np.mean(image_arr[k:k + avg_gap, i]) < 0.2 * max_in and low_idx == -1:
+                        print(np.mean(image_arr[k:k + avg_gap, i]))
                         low_idx = k
                         break
                 break
         if high_idx == -1:
             high_idx = 0
         if low_idx == -1:
-            low_idx = image_arr.shape[0]-20
-        gap_grads.append((np.mean(image_arr[high_idx:high_idx+5]) - np.mean(image_arr[low_idx:low_idx+20]))
+            low_idx = image_arr.shape[0]-avg_gap
+        ll.append(low_idx)
+        hh.append(high_idx)
+        gap_grads.append((np.mean(image_arr[high_idx:high_idx+avg_gap, i]) - np.mean(image_arr[low_idx:low_idx+avg_gap, i]))
                          / (low_idx - high_idx))
-        high = np.mean(image_arr[high_idx:high_idx+5])
-        low = np.mean(image_arr[low_idx:low_idx+20])
+        high = np.mean(image_arr[high_idx:high_idx+avg_gap, i])
+        low = np.mean(image_arr[low_idx:low_idx+avg_gap, i])
         print("i:{}-high_idx:{}-low-idx:{}-high-{}-low-{}".format(i, high_idx, low_idx, high, low))
 
-
+    gap_grads = [g if g>0 else 0 for g in gap_grads]
 
     plt.subplot('311')
-    plt.plot(image_arr[:, 20])
-    plt.ylim(50,256)
+    plt.plot(image_arr[:, 0])
+    plt.ylim(10,256)
     plt.subplot('312')
     plt.plot(gap_grads)
+    plt.ylim(0,3)
     plt.subplot('313')
-    plt.imshow(image_arr, cmap='gray')
+    plt.imshow(image, cmap='gray')
+    plt.scatter(range(0, image.shape[1], 10), ll, 0.2, 'r')
+    plt.scatter(range(0, image.shape[1], 10), hh, 0.2, 'b')
+    plt.savefig('./results/normal4-avg-0-10.png')
     plt.show()
 
     return
@@ -157,7 +167,7 @@ if __name__ == "__main__":
             print(tp)
             save_name = prefix[idx] + "-" + tp[:-5] + '.png'
             # feature_ana(os.path.join(inner_dir, tp), os.path.join(save_dir, save_name))
-            feature_ana('./images/normal/M0003_2019_P0000093_circle_2.0x2.0_C04_S004.png',
+            feature_ana('./images/normal/B1902191-12_circle_5.0x5.0_C01_S0005_0.png',
                         os.path.join(save_dir, save_name))
             break
         break
