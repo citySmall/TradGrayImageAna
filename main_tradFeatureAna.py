@@ -24,16 +24,16 @@ def df_4 (x, A, B, C, D, E):
     return A * x * x * x * 4 + B * x * x * 3 + C * x * 2 + D;
 
 
-def feature_ana(tiff_path, save_path, delta = 1, fs = 21):
+def feature_ana(tiff_path, save_path, delta = 1, fs = 21, ratio = [0.8, 0.1, 30]):
     # plt.figure(figsize=(5,8))
     # tif = TiffFile(tiff_path)
-    image = cv2.imread(tiff_path, 0)[225:, :]
+    image = cv2.imread(tiff_path, 0)# [225:, :]
     mean, std = np.mean(image), np.std(image)
     image = cv2.blur(image, (19, 19))
     image_arr = np.transpose(np.asarray([np.mean(image[:, m:m+10], axis=1) for m in range(0, image.shape[-1], 10)]))
     print('shape:{}'.format(image_arr.shape))
 
-    avg_gap = 80
+    avg_gap = ratio[-1]
     gap_grads = []
     hh = []
     ll = []
@@ -42,10 +42,10 @@ def feature_ana(tiff_path, save_path, delta = 1, fs = 21):
         low_idx = -1
         max_in = np.max(image_arr[:, i])
         for j in range(image_arr.shape[0]-avg_gap):
-            if np.mean(image_arr[j:j+avg_gap, i]) > 0.65 * max_in and high_idx == -1:
+            if np.mean(image_arr[j:j+avg_gap, i]) > ratio[0] * max_in and high_idx == -1:
                 high_idx = j
                 for k in range(j, image_arr.shape[0]-avg_gap):
-                    if np.mean(image_arr[k:k + avg_gap, i]) < 0.3 * max_in and low_idx == -1:
+                    if np.mean(image_arr[k:k + avg_gap, i]) < ratio[1] * max_in and low_idx == -1:
                         # print(np.mean(image_arr[k:k + avg_gap, i]))
                         low_idx = k
                         break
@@ -161,8 +161,9 @@ def feature_ana(tiff_path, save_path, delta = 1, fs = 21):
 if __name__ == "__main__":
     save_dir = "./images/"
     travel_dirs = ['cancer', 'normal', 'hsil']
-    prefix = ['normal', 'HSIL', 'cancer']
+    prefix = ['cancer', 'normal', 'hsil']
     colors = ['r', 'g', 'y']
+    ratio = [[0.8, 0.25, 30], [0.9, 0.25, 50], [0.9, 0.3, 20]]
     all_grads = []
     for idx, td in enumerate(travel_dirs):
         inner_dir = os.path.join(save_dir, travel_dirs[idx])
@@ -171,17 +172,18 @@ if __name__ == "__main__":
         for tp in tiff_paths:
             print(tp)
             save_name = prefix[idx] + "-" + tp[:-5] + '.png'
-            cls.append(feature_ana(os.path.join(inner_dir, tp), os.path.join(save_dir, save_name)))
+            cls.append(feature_ana(os.path.join(inner_dir, tp), os.path.join(save_dir, save_name), ratio[idx]))
             # feature_ana('./images/normal/B1902191-12_circle_5.0x5.0_C01_S0005_0.png',
             #             os.path.join(save_dir, save_name))
             # break
         # break
         all_grads.append(cls)
     for idx, grads in enumerate(all_grads):
-        for grad in grads:
-            # plt.plot(grad, color = colors[idx])
-            plt.scatter(range(len(grad)), grad, 0.2, colors[idx])
-
+        if idx != -1:
+            for grad in grads:
+                # plt.plot(grad, color = colors[idx])
+                plt.scatter(range(len(grad)), grad, 0.2, colors[idx])
+    plt.ylim(0, 3)
     plt.show()
     print(np.asarray(all_grads).shape)
     print("okay")

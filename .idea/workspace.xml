@@ -20,33 +20,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main_tradFeatureAna.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="23" column="61" lean-forward="true" selection-start-line="23" selection-start-column="61" selection-end-line="23" selection-end-column="61" />
+            <state relative-caret-position="419">
+              <caret line="172" column="21" lean-forward="true" selection-start-line="172" selection-start-column="21" selection-end-line="172" selection-end-column="21" />
               <folding>
                 <element signature="e#24#34#0" expanded="true" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/results/cancer1-avg-0-10.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/results/hsil1-avg-0-10.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/results/hsil2-avg-0-10.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/results/normal1-avg-0-10.png">
-          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -72,15 +52,14 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="120" />
-    <option name="width" value="1637" />
-    <option name="height" value="924" />
+    <option name="width" value="1629" />
+    <option name="height" value="936" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -120,6 +99,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -198,24 +178,43 @@
   <component name="ToolWindowManager">
     <frame x="-1" y="-1" width="1922" height="1082" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22485518" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.22485518" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49921012" weight="0.32876712" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49605057" weight="0.32876712" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49552396" weight="0.44046363" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4986835" weight="0.41201264" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49973643" weight="0.32944915" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49973643" weight="0.32944915" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49973643" weight="0.32944915" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50394946" side_tool="true" visible="true" weight="0.32876712" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.504476" side_tool="true" weight="0.32876712" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32944915" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22485518" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49921012" weight="0.32876712" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49552396" visible="true" weight="0.32876712" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4986835" weight="0.41201264" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49973643" weight="0.32944915" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49973643" weight="0.32944915" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49973643" weight="0.32944915" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.504476" side_tool="true" visible="true" weight="0.32876712" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32944915" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -301,9 +300,6 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/results/cancer2-avg-2100-2110.png" />
-    <entry file="file://$PROJECT_DIR$/results/normal3-avg-0-10.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Figure_2.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -314,36 +310,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/normal/B1902166-12_circle_5.0x5.0_C01_S0001_0.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/hsil/3_P0000776_circle_5.0x5.0_C04_S004.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/images/hsil/6_P0000776_circle_5.0x5.0_C01_S001.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/main_tradFeatureAna.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="23" column="61" lean-forward="true" selection-start-line="23" selection-start-column="61" selection-end-line="23" selection-end-column="61" />
-          <folding>
-            <element signature="e#24#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/cancer1-avg-0-10.png">
+    <entry file="file://$PROJECT_DIR$/images/normal/B1902166-12_circle_5.0x5.0_C01_S0001_0.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/results/hsil1-avg-0-10.png">
+    <entry file="file://$PROJECT_DIR$/results/normal1-avg-0-10.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/normal4-avg-0-10.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/normal3-avg-0-10.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/normal2-avg-0-10.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/results/hsil2-avg-0-10.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/results/normal1-avg-0-10.png">
+    <entry file="file://$PROJECT_DIR$/results/hsil1-avg-0-10.png">
       <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/cancer1-avg-0-10.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_tradFeatureAna.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="172" column="21" lean-forward="true" selection-start-line="172" selection-start-column="21" selection-end-line="172" selection-end-column="21" />
+          <folding>
+            <element signature="e#24#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
