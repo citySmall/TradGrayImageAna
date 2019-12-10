@@ -169,21 +169,26 @@ if __name__ == "__main__":
         inner_dir = os.path.join(save_dir, travel_dirs[idx])
         tiff_paths = [tp for tp in os.listdir(inner_dir) if tp.endswith('.png')]
         cls = []
-        for tp in tiff_paths:
-            print(tp)
-            save_name = prefix[idx] + "-" + tp[:-5] + '.png'
-            cls.append(feature_ana(os.path.join(inner_dir, tp), os.path.join(save_dir, save_name), ratio[idx]))
-            # feature_ana('./images/normal/B1902191-12_circle_5.0x5.0_C01_S0005_0.png',
-            #             os.path.join(save_dir, save_name))
+        if idx != -1:
+            for tp in tiff_paths:
+                print(tp)
+                save_name = prefix[idx] + "-" + tp[:-5] + '.png'
+                cls.append(feature_ana(os.path.join(inner_dir, tp), os.path.join(save_dir, save_name), ratio[idx]))
+                # feature_ana('./images/normal/B1902191-12_circle_5.0x5.0_C01_S0005_0.png',
+                #             os.path.join(save_dir, save_name))
+                # break
             # break
-        # break
-        all_grads.append(cls)
+            all_grads.append(cls)
     for idx, grads in enumerate(all_grads):
         if idx != -1:
+            std = []
             for grad in grads:
                 # plt.plot(grad, color = colors[idx])
-                plt.scatter(range(len(grad)), grad, 0.2, colors[idx])
-    plt.ylim(0, 3)
+                # plt.scatter(range(len(grad)-1), np.fabs(np.asarray(grad[1:]) - np.asarray(grad[:-1])).tolist(), 0.2, colors[idx])
+                std.append(np.std(grad))
+            plt.scatter(range(len(std)), std, 20,
+                        colors[idx])
+    plt.ylim(0, 0.8)
     plt.show()
     print(np.asarray(all_grads).shape)
     print("okay")
